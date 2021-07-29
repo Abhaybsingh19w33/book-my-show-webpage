@@ -1,8 +1,18 @@
-function App() {
+import React, { Fragment } from 'react';
+import { Route } from "react-router-dom";
+
+// HOC
+import DefaultHOC from "./HOC/Default.HOC";
+
+// Components
+import Temp from "./components/temp";
+
+const App = () => {
+  // function App() {
   return (
-    <div clasname="App">
-      <h1 class="text-6xl hover:text-blue-500">this is 6xl</h1>
-    </div>
+    <Fragment>
+      <DefaultHOC path="/" exact component={Temp} />
+    </Fragment>
   );
 }
 
