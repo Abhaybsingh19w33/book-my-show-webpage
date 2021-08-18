@@ -8,21 +8,19 @@ import Poster from "../Poster/poster.component";
 import PosterCarouselSettings from "../../config/PosterCarousel.config";
 import PremierImages from "../../config/TempPosters.config";
 
-export const Premier = () => {
-
+const PosterSlider = (props) => {
     return (
         <Fragment>
             <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl font-bold">Premiers</h3>
-                <p className="text-white text-sm">Brand new release every friday</p>
+                <h3 className={`text-2xl font-bold ${props.isDark ? "text-white" : "text-gray-800"}`}>{props.title}</h3>
+                <p className={`text-sm ${props.isDark ? "text-white" : "text-gray-800"}`}>{props.subtitle}</p>
             </div>
             <Slider {...PosterCarouselSettings}>
-                {PremierImages.map((image) => (
-                    <Poster {...image} />
+                {props.images.map((image) => (
+                    <Poster {...image} isDark={props.isDark} />
                 ))}
             </Slider>
         </Fragment>
     );
 };
-
-export default Premier;
+export default PosterSlider;
