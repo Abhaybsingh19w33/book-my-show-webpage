@@ -21,9 +21,9 @@ const NavSm = () => {
                     {/* grey text */}
                     {/* text-xs - means extra small */}
                     {/* flex to adjust 2 property in same row */}
-                    <span className="text-gray-400 text-xs flex items-center">
+                    {/* <span className="text-gray-400 text-xs flex items-center">
                         Vapi <BiChevronRight />
-                    </span>
+                    </span> */}
                 </div>
                 {/* seperate div it is used to not overflow out of container */}
                 {/* width and height */}
@@ -99,7 +99,7 @@ const Navbar = () => {
             {/* md:hidden from md to xl this will be hidden */}
             <div className="md:hidden">
                 {/* for mobile screen */}
-                <h1>this is navbar</h1>
+                {/* <h1>this is navbar</h1> */}
                 <NavSm />
             </div>
             {/* hidden by default */}
