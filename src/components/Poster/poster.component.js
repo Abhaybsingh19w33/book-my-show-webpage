@@ -6,9 +6,9 @@ const Poster = (props) => {
             {/* flex col to make image title and subtitle in same column */}
             {/* item start to align the item to left */}
 
-            <div className="flex flex-col items-start gap-2 px-1 md:px-3 ">
+            <div className="flex flex-col items-start gap-2 px-1 md: px-3 ">
                 {/* width is not mentioned here it will be taken care of by the carousel */}
-                <div className="h-40 md:h-80">
+                <div className="h-40 md: h-80">
                     <img
                         src={props.src}
                         alt={props.title}
