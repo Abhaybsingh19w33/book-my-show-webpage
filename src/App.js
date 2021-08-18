@@ -12,7 +12,7 @@ import MovieHOC from './HOC/Movie.HOC';
 // Pages
 import HomePage from "./pages/Home.page";
 import Movie from './pages/Movie.page';
-
+import Plays from './pages/Play.page';
 
 const App = () => {
   // function App() {
@@ -20,6 +20,7 @@ const App = () => {
     <Fragment>
       <DefaultHOC path="/" exact component={HomePage} />
       <MovieHOC path="/movie/:id" exact component={Movie} />
+      <DefaultHOC path="/plays" exact component={Plays} />
     </Fragment>
   );
 }
