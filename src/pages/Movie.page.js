@@ -8,9 +8,6 @@ import MovieHero from "../components/MovieHero/MovieHero.component";
 import Cast from "../components/Cast/Cast.component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
 
-// config
-import TempPosters from "../config/TempPosters.config";
-
 //icons 
 import { FaCcVisa, FaCcApplePay } from "react-icons/fa";
 
