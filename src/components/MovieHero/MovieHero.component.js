@@ -1,9 +1,13 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
+
+// context
+import { MovieContext } from "../../context/movie.context";
 
 // components
 import MovieInfo from './MovieInfo.component';
 
 const MovieHero = () => {
+    const { movie } = useContext(MovieContext);
     return (
         <Fragment>
             <div>
@@ -17,7 +21,7 @@ const MovieHero = () => {
                     </div>
                     <div className="w-full h-56 bg-opacity-50 absolute bg-black z-10 bottom-0" />
                     <img
-                        src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/demon-slayer-mugen-train-et00313314-30-07-2021-05-14-22.jpg"
+                        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                         alt="poster"
                         className="w-full h-full"
                     />
@@ -33,7 +37,7 @@ const MovieHero = () => {
                         <MovieInfo />
                     </div>
                     <img
-                        src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/demon-slayer-mugen-train-et00313314-30-07-2021-05-14-22.jpg"
+                        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                         alt="poster"
                         className="w-full h-full"
                     />
@@ -55,7 +59,7 @@ const MovieHero = () => {
                     <div className="absolute z-30 left-24 top-10 flex items-center gap-10">
                         <div className=" w-64 h-96 ">
                             <img
-                                src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/demon-slayer-mugen-train-et00313314-30-07-2021-05-14-22.jpg"
+                                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                                 alt="poster"
                                 className="w-full h-full rounded-xl"
                             />
@@ -65,7 +69,7 @@ const MovieHero = () => {
                         </div>
                     </div>
                     <img
-                        src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/demon-slayer-mugen-train-et00313314-30-07-2021-05-14-22.jpg"
+                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                         alt="poster"
                         className="w-full h-full"
                     />
