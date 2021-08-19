@@ -12,10 +12,15 @@ const MovieHero = () => {
         <Fragment>
             <div>
                 {/* mobile */}
+                {/* relative - relative to the first static parent */}
                 <div
                     className="relative md:hidden w-full"
                     style={{ height: "calc(180vw)" }}
                 >
+                    {/*  Absolute positioned elements are removed from the normal flow, and can overlap elements. */}
+                    {/* z-20 - z index to 20 */}
+                    {/* bottom-4 Set the bottom edge of the <div> element to 4 unit above the bottom edge of its nearest parent element with some positioning: */}
+                    {/* left-4 Set the left edge of the <div> element to 4 unit above the left edge of its nearest parent element with some positioning: */}
                     <div className="absolute z-20 bottom-4 left-4">
                         <MovieInfo />
                     </div>

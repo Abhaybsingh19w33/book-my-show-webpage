@@ -9,6 +9,7 @@ import MovieNavbar from "../components/Navbar/movieNavbar.component";
 import { MovieContext } from "../context/movie.context";
 
 const MovieLayout = (props) => {
+    // using hooks for state management
     const { id } = useParams();
     const { movie, setMovie } = useContext(MovieContext);
 
@@ -22,6 +23,7 @@ const MovieLayout = (props) => {
 
     return (
         <Fragment>
+            {/* Movie Navbat */}
             <MovieNavbar />
             {props.children}
         </Fragment>

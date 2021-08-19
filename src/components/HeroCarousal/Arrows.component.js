@@ -9,6 +9,7 @@ export const NextArrow = (props) => {
             <div
                 className={props.className}
                 // applying all the existing styles
+                // bg color to black
                 style={{ ...props.style, backgroundColor: "black" }}
                 onClick={props.onClick}
             />
@@ -21,6 +22,7 @@ export const PrevArrow = (props) => {
         <div
             className={props.className}
             // applygin all the existing styles
+            // bg color to black
             style={{ ...props.style, backgroundColor: "black" }}
             onClick={props.onClick}
         />

@@ -4,8 +4,18 @@ import Slider from 'react-slick';
 const EntertainmentCard = (props) => {
     return (
         <Fragment>
+            {/* w-full width set to full */}
+            {/* h-30 - set height  to 30 */}
+            {/* px-2 - set padding left and right  by */}
             <div className="w-full h-30 px-2">
-                <img className="w-full h-full rounded-xl" src={props.src} alt="entertainment image" />
+                {/* w-full width set to full */}
+                {/* h-full height set to full */}
+                {/* rounded-xl - round the edge */}
+                <img
+                    className="w-full h-full rounded-xl"
+                    src={props.src}
+                    alt="entertainment image"
+                />
             </div>
         </Fragment>
     );

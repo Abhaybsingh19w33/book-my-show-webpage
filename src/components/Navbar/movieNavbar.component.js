@@ -10,11 +10,23 @@ import {
 import { MovieContext } from "../../context/movie.context";
 
 const NavSm = () => {
+    // Accepts a context object (the value returned 
+    // from React.createContext) and returns the 
+    // current context value for that context. The 
+    // current context value is determined by the 
+    // value prop of the nearest <MyContext.Provider> 
+    // above the calling component in the tree.
     const { movie } = useContext(MovieContext);
     return (
         <Fragment>
+            {/* text-white -  set text color to white */}
+            {/* flex - to align items in same row */}
+            {/* items-center -  align items to cenetr */}
+            {/* justify-between - provide proper space between items */}
             <div className="text-white flex items-center justify-between">
                 <div>
+                    {/* text-xl - set text to extra large*/}
+                    {/* font-bold - set font to bold */}
                     <h3 className="text-xl font-bold">{movie.original_title}</h3>
                 </div>
                 <div className="w-8 h-8">

@@ -11,20 +11,28 @@ const MovieInfo = () => {
     const [price, setPrice] = useState(0);
     const { movie } = useContext(MovieContext);
 
+    // if genre i present then the genres will be mapped else null will be passed
     // optional chaining.
     const genres = movie.genres ? movie.genres.map(({ name }) => name).join(", ") : null;
 
+    // funcitonn for rent button 
     const rentMovies = () => {
+        // set open to true
         setIsOpen(true);
+        // set Price to 149
         setPrice(149);
     };
 
+    // funcitonn for rent button 
     const buyMovies = () => {
+        // set open to true
         setIsOpen(true);
+        // set Price to 599
         setPrice(599);
     };
     return (
         <Fragment>
+            {/* passing setIsOpen function, isOpen value, price value will be passes as props */}
             <PaymentModal setIsOpen={setIsOpen} isOpen={isOpen} price={price} />
             <div className="flex flex-col gap-3 lg:gap-8">
                 <div className="flex items-center gap-3 md:px-4">
@@ -42,6 +50,7 @@ const MovieInfo = () => {
                 <h1 className="text-white lg:text-5xl font-bold hidden lg:block ">
                     {movie.original_title}
                 </h1>
+                {/* flex-col-reverse -  the divs are stacked in reverse order */}
                 <div className="flex flex-col-reverse gap-3 lg:gap-5 lg:flex-col">
                     <div className="text-white font-light flex flex-col gap-2 md:px-4">
                         <h4>4k &bull; {movie.original_language}</h4>

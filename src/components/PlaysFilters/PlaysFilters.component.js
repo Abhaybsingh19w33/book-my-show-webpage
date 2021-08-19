@@ -4,10 +4,14 @@ import { BiChevronUp, BiChevronDown } from "react-icons/bi";
 const PlaysFilter = (props) => {
     return (
         <Disclosure>
+            {/* open - it will represent if the filter is open or not */}
             {({ open }) => (
                 <div>
+                    {/* filter button */}
                     <Disclosure.Button className="py-2 flex items-center gap-3">
+                        {/* if open up button will be displayed else down button eill be displayed*/}
                         {open ? <BiChevronUp /> : <BiChevronDown />}{" "}
+                        {/* if open then  text is red else text will be gray */}
                         <span className={open ? "text-red-600" : "text-gray-700"}>
                             {props.title}
                         </span>

@@ -9,7 +9,9 @@ import MovieProvider from "./context/movie.context";
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* BrowserRouter to route the page */}
     <BrowserRouter>
+      {/* MovieProvider thie will provide movie data to app.js */}
       <MovieProvider>
         <App />
       </MovieProvider>

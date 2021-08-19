@@ -5,6 +5,7 @@ const Cast = (props) => {
         <Fragment>
             <div className="flex flex-col items-center">
                 <div className="w-32 h-32">
+                    {/* rounded-full - to make the image div circular */}
                     <img
                         src={props.image}
                         alt="crew man"
