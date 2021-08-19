@@ -16,6 +16,8 @@
 					MovieNavbar
 					Movie.page
 						MovieHero
+							MovieInfo
+								Payment.component
 						Cast
 						PosterSlider
 							PosterCarousel.config
