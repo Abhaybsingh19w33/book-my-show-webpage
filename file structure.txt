@@ -1,0 +1,29 @@
+(main)index.js
+	MovieProvider from "./context/movie.context";
+		App.js
+			Default.HOC
+				Default.layout
+					Navbar	
+					HeroCarousel
+					pages/Homepage
+						Entertainmentcard.component
+						PosterSlider.component
+							PosterCarousel.config
+							poster.component
+			
+			Movie.HOC
+				Movie.layout
+					MovieNavbar
+					Movie.page
+						MovieHero
+						Cast
+						PosterSlider
+							PosterCarousel.config
+							poster.component
+			Default.HOC
+				Default.layout
+					Navbar	
+					HeroCarousel
+					pages/Plays
+						PosterSlider
+						PlaysFilters.component
