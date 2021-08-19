@@ -6,7 +6,6 @@ import Poster from "../Poster/poster.component";
 
 // config 
 import PosterCarouselSettings from "../../config/PosterCarousel.config";
-import PremierImages from "../../config/TempPosters.config";
 
 const PosterSlider = (props) => {
     const sliderConfig = props.config ? props.config : PosterCarouselSettings;

@@ -5,9 +5,6 @@ import axios from 'axios';
 import EntertainmentCardSlider from "../components/Entertainment/Entertainmentcard.component";
 import PosterSlider from '../components/PosterSlider/PosterSlider.component';
 
-// config 
-import TempPosters from "../config/TempPosters.config";
-
 const HomePage = () => {
 
     const [popularMovies, setPopularMovies] = useState([]);
